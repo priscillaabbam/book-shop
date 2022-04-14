@@ -2,7 +2,7 @@ const fs = require("fs");
 
 let users = [];
 
-fs.readFile("database.json", (err, data) => {
+fs.readFile("books.json", (err, data) => {
   if (err) throw err;
 
   users = JSON.parse(data);
